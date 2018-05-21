@@ -1,0 +1,22 @@
+path:
+  repo: /home/cosine/mygit/linux    #repo path
+  output: /home/cosine/cveresult  #output folder path
+#select keywords in commit descirption
+keyword: 'CVE-'
+#limit the time range of commit
+time:
+  from: 2017-01-01
+  to: 2018-01-01
+#the files need to save
+savefile:
+  diff: True   #diff file
+  a_file: True   #the file unpatched (vulnerable code)
+  b_file: True   #the file patched (fixed code)
+  description: True   #description about the commit
+  keeptype: True   #Weather you want to keep the type of file patched 
+#filter the commit
+filter:
+  maxdiffsnum: 10
+  maxchangeline: 20
+#You'd better not change the para (the number of commits load per times)
+pagesize: 100000
