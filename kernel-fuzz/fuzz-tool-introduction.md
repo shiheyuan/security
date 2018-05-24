@@ -74,6 +74,7 @@ sanitize例程可以被用于构建需要特殊值（例如，结构），或在
 
      $ ./trinity -c madvise
 为了执行它的工作，Trinity创建了许多进程，如下图所示：
+
 ![process](trinity-processes.png)
 
 1. 主进程执行各种初始化（例如，打开文件描述符和创建用于测试的存储器映射）
